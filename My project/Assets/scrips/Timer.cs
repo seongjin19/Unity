@@ -20,12 +20,12 @@ public class Timer : GameManager
     {
         if(Input.GetKeyDown(KeyCode.Space) && start == false)
         {
-            start = true;
+            StartChange();
         }
-        if (start == true)
-        {
-            LimitTime -= Time.deltaTime;
-        }
+       
+       
+        LimitTime -= Time.deltaTime;
+        
         text_Timer.text = "time : " + Mathf.Round(LimitTime);
         
     }

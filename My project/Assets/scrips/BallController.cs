@@ -25,8 +25,8 @@ public class BallController : GameManager
     {
         if(Input.GetKeyDown(KeyCode.Space) && start == false)
         {
-            ballRd.AddForce(0f, 0f, -speed);  // 게임을 시작하면 공이 움직임
-            start = true;
+            ballRd.AddForce(0f, 0f, -speed);
+            StartChange();
         }
     }
 
