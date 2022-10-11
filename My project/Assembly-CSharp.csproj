@@ -58,12 +58,16 @@
   <ItemGroup>
     <Compile Include="Assets\scrips\PlayerControler.cs" />
     <Compile Include="Assets\scrips\ChangeScene.cs" />
-    <Compile Include="Assets\scrips\Timer.cs" />
+    <Compile Include="Assets\scrips\ObstacleMove.cs" />
     <Compile Include="Assets\scrips\BallController.cs" />
     <Compile Include="Assets\scrips\GameManager.cs" />
     <Compile Include="Assets\scrips\Enemy.cs" />
-    <Compile Include="Assets\scrips\StartText.cs" />
-    <Compile Include="Assets\scrips\ObstacleMove.cs" />
+    <Compile Include="Assets\scrips\UIManager.cs" />
+    <Compile Include="Assets\scrips\GameOver.cs" />
+    <Compile Include="Assets\scrips\EnemyB.cs" />
+    <Compile Include="Assets\scrips\EnemyR.cs" />
+    <Compile Include="Assets\scrips\Boss.cs" />
+    <Compile Include="Assets\scrips\Item.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

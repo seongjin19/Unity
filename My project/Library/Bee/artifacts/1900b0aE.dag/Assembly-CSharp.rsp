@@ -350,13 +350,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/scrips/BallController.cs"
+"Assets/scrips/Boss.cs"
 "Assets/scrips/ChangeScene.cs"
 "Assets/scrips/Enemy.cs"
+"Assets/scrips/EnemyB.cs"
+"Assets/scrips/EnemyR.cs"
 "Assets/scrips/GameManager.cs"
+"Assets/scrips/GameOver.cs"
+"Assets/scrips/Item.cs"
 "Assets/scrips/ObstacleMove.cs"
 "Assets/scrips/PlayerControler.cs"
-"Assets/scrips/StartText.cs"
-"Assets/scrips/Timer.cs"
+"Assets/scrips/UIManager.cs"
 -langversion:9.0
 
 /deterministic

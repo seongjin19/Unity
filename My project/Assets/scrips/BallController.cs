@@ -8,7 +8,8 @@ public class BallController : GameManager
     private Rigidbody ballRd;   //Rigidbody 컴포넌트 저장
     public float speed = 100.0f;
     Vector3 startPos; // 공의 출발위치 정보를 저장하는 변수
-    
+    public bool EndLine;
+    public int DMG = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class BallController : GameManager
         startPos = new Vector3(0, 0, 0);    // 공의 초기 위치 저장
         //ballRd.AddForce(0f, 0f, -speed);  // 게임을 시작하면 공이 움직임
         //공의 처음 출발위치를 저장
+        EndLine = false;
     }
 
     // Update is called once per frame
@@ -32,24 +34,24 @@ public class BallController : GameManager
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("wall"))
-        {
-            Vector3 currPos = transform.position;    // 공의 현재 위치
+        //if(collision.gameObject.CompareTag("wall"))
+        //{
+        //    Vector3 currPos = transform.position;    // 공의 현재 위치
 
-            Vector3 incomVec = currPos - startPos;  // 공의 현재 위치 - 출발 위치로 입사각 계산
-            Vector3 normalVec = collision.contacts[0].normal;   // 법선백터 노말라이즈
-            Vector3 reflectVec = Vector3.Reflect(incomVec, normalVec);  //반사각 계산
-            reflectVec = reflectVec.normalized; // 반사각 노말라이즈
-            ballRd.velocity = Vector3.zero;
-            ballRd.AddForce(reflectVec * speed);    //반사각 방향으로 힘을 가함    
-        }
+        //    Vector3 incomVec = currPos - startPos;  // 공의 현재 위치 - 출발 위치로 입사각 계산
+        //    Vector3 normalVec = collision.contacts[0].normal;   // 법선백터 노말라이즈
+        //    Vector3 reflectVec = Vector3.Reflect(incomVec, normalVec);  //반사각 계산
+        //    reflectVec = reflectVec.normalized; // 반사각 노말라이즈
+        //    ballRd.velocity = Vector3.zero;
+        //    ballRd.AddForce(reflectVec * speed);    //반사각 방향으로 힘을 가함    
+        //}
 
         if (collision.gameObject.CompareTag("Player"))
         {
             Vector3 currPos = transform.position;    // 공의 현재 위치
             Vector3 playerPos = player.position;
             Vector3 pbPos = currPos - playerPos;
-            pbPos.x = pbPos.x / 1.5f;
+            pbPos.x = pbPos.x / 1.2f;
             pbPos = pbPos.normalized;
             ballRd.velocity = Vector3.zero;
             ballRd.AddForce(pbPos*speed);
@@ -57,6 +59,11 @@ public class BallController : GameManager
            
         }
         startPos = transform.position; // 출발위치 새로 저장
+        if (collision.gameObject.CompareTag("EndLine"))
+        {
+            EndLine = true;
+        }
+
     }
 }
 
