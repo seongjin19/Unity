@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        is_clear = 68;
+        is_clear = 33;
         Time.timeScale = 0;
         gameoverPanel.SetActive(false);
         gameclearPanel.SetActive(false);
