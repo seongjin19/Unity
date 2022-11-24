@@ -131,15 +131,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6142}
     - Class: 114
-      Script: {instanceID: 6390}
+      Script: {instanceID: 6354}
     - Class: 114
-      Script: {instanceID: 6632}
+      Script: {instanceID: 6392}
     - Class: 114
-      Script: {instanceID: 7404}
+      Script: {instanceID: 6634}
     - Class: 114
-      Script: {instanceID: 7508}
+      Script: {instanceID: 7406}
     - Class: 114
-      Script: {instanceID: 24012}
+      Script: {instanceID: 7510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -771,6 +771,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 86c11cd13f85e6267567bd59a5471869
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstacleMove1
+  - hash:
+      serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1015,13 +1021,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 86c11cd13f85e6267567bd59a5471869
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ObstacleMove1
   platform: 5
   scenePathNames:
   - Assets/Scenes/play.unity
-  playerPath: "C:/Users/psaej/Desktop/\uC0C8 \uD3F4\uB354/B977006_\uAE40\uC131\uC9C4.exe"
+  playerPath: "C:/Users/psaej/Desktop/B977006_\uAE40\uC131\uC9C4/B977006_\uAE40\uC131\uC9C4.exe"

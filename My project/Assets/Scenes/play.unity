@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01334f739314bd64ab8d7eb641bdb906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 25
   ball: {fileID: 2109635469}
   item: {fileID: 8757297316087212768, guid: 3f3ba089ce3aaf6479d629288211476c, type: 3}
 --- !u!65 &461975402

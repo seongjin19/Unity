@@ -65,11 +65,11 @@
     <Compile Include="Assets\scrips\ObstacleMove.cs" />
     <Compile Include="Assets\scrips\ObstacleMove2.cs" />
     <Compile Include="Assets\scrips\BallController.cs" />
+    <Compile Include="Assets\scrips\ObstacleMove1.cs" />
     <Compile Include="Assets\scrips\GameManager.cs" />
     <Compile Include="Assets\scrips\ItemBox.cs" />
     <Compile Include="Assets\scrips\EnemyB.cs" />
     <Compile Include="Assets\scrips\Enemy.cs" />
-    <Compile Include="Assets\scrips\ObstacleMove1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

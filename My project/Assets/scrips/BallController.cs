@@ -6,7 +6,7 @@ public class BallController : GameManager
 {
     public Transform player;
     private Rigidbody ballRd;   //Rigidbody 컴포넌트 저장
-    public float speed = 100.0f;
+    public float speed = 80.0f;
     Vector3 startPos; // 공의 출발위치 정보를 저장하는 변수
     public bool EndLine;
     public int DMG = 1;
