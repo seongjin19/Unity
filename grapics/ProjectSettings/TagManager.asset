@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Plain
+  - Obstacle
+  - Irongrate
+  - Target
+  - Kunai
+  - Gem
   layers:
   - Default
   - TransparentFX
